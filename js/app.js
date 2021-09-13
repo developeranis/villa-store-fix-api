@@ -85,7 +85,7 @@ const updateTotal = () => {
 // Call Product Details
 const loadProductDetail = productId => {
   document.getElementById('product-details').textContent = '';
-  const url = `http://fakestoreapi.com/products/${productId}`;
+  const url = `https://fakestoreapi.com/products/${productId}`;
   fetch(url)
       .then(res => res.json())
       .then(data => displayProductDetail(data));
